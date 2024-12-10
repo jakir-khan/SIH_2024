@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    display: inline-block;
+    margin-right: 10px; /* Space between elements */
+    vertical-align: middle;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+select, #generate-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+        
+}
+
+#generate-btn {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; /* Add space before the button */
+    width: 10%;
+    margin-top: 30px;
+}
+
+#generate-btn:hover {
+    background-color: #0056b3;
+}
+select:focus{
+    border-radius: 1px solid blue;
+}
+#output {
+    
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    max-height: 40%;
+    max-width: 80%;
+}
+
+
+/* Add borders and lines to the table */
+#table {
+    
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+}
+
+#table th, #table td {
+    border: 1px solid #ddd; /* Add border around table cells */
+    padding: 6px;
+    text-align: center;
+    
+}
+
+#table th {
+    background-color: #f2f2f2; /* Light background for header */
+    font-weight: bold;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row colors */
+    
+}
+
+#table tr:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}

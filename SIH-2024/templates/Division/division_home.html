@@ -1,0 +1,53 @@
+{% extends "Division/division_main.html" %} 
+{% block title %}Home{% endblock title %} 
+{% block content %}
+
+<section class="home">
+  <div class="dashboard">
+      <h1>Division Dashboard</h1>
+      <div class="cards">
+          <div class="card">
+              <h2>Total Deposits</h2>
+              <p>₹1,234,567</p>
+          </div>
+          <div class="card">
+              <h2>Scheme Participation Rate</h2>
+              <p>78.5%</p>
+          </div>
+          <div class="card">
+              <h2>Transactions</h2>
+              <p>1,234</p>
+          </div>
+      </div>
+      <div class="charts">
+          <div class="chart">
+              <h2>Scheme Distribution</h2>
+              <canvas id="pieChart"></canvas>
+          </div>
+          <div class="chart">
+              <h2>Daily Transactions</h2>
+              <canvas id="barChart"></canvas>
+          </div>
+      </div>
+      <div class="ml-insights">
+          <h2>ML Insights</h2>
+          <div class="insight-cards">
+              <div class="insight-card">
+                  <h3>High-potential Wards</h3>
+                  <p>Ward 12, Ward 7, Ward 3</p>
+              </div>
+              <div class="insight-card">
+                  <h3>Underserved Customers</h3>
+                  <p>Senior citizens in Ward 5</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</section>
+<link rel="stylesheet" href="static/home.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="static/home.js"></script>
+
+{% endblock%}

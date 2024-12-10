@@ -1,0 +1,46 @@
+{% extends "Division/division_main.html" %} 
+{% block title %}Economic{% endblock title %} 
+{% block content %}
+
+<section class="home">
+  <div class="container1">
+    <h1>Data Education Dashboard</h1>
+    <div class="form-group">
+        <label for="demographic">Education Level:</label>
+        <select id="demographic">
+            <option value="">Select</option>
+            <option value="Workforce">Workforce</option>
+            <option value="Non-Workers">Non-Workers</option>
+            <option value="Workforce by Type">Workforce by Type</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="column">Select Column:</label>
+        <select id="column" disabled></select>
+    </div>
+    <div class="form-group">
+        <label for="graph">Graph Type:</label>
+        <select id="graph">
+            <option value="bar">Bar</option>
+            <option value="line">Line</option>
+            <option value="pie">Pie</option>
+        </select>
+    </div>
+    <button id="generate-btn">Generate</button>
+    <div id="output">
+       
+        <div id="summary"></div>
+       
+        <canvas id="chart"></canvas>
+        
+        <table id="table"></table>
+    </div>
+</div>
+
+</section>
+<link rel="stylesheet" href="static/sectors.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="static/economic_division.js"></script>
+
+{% endblock%}

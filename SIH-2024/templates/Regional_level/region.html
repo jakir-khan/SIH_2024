@@ -1,0 +1,59 @@
+{% extends "Regional_level/main.html" %} 
+{% block title %}Sectors{% endblock title %} 
+{% block content %}
+
+<section class="home">
+   <h2 style="color: brown;margin-left: 20%;">Sectors</h2>
+  <div class="container">
+    <div class="card__container">
+       <article class="card__article">
+          <img src="static/img/demographic.jpg" alt="image" class="card__img" style="height: 250px;width: 300px;">
+          <div class="card__data">
+             <a href="/demographic" class="card__button"> <h2 class="card__title">Demographic</h2></a>
+          </div>
+       </article>
+       
+       <article class="card__article">
+          <img src="static/img/education1.jpg" alt="image" class="card__img">
+          <div class="card__data">
+             <a href="/education" class="card__button"><h2 class="card__title">Education</h2></a>
+          </div>
+       </article>
+
+
+       <article class="card__article">
+         <img src="static/img/housing.jpg" alt="image" class="card__img">
+         <div class="card__data">
+           <a href="/housing" class="card__button"><h2 class="card__title">Housing</h2></a>
+         </div>
+      </article>
+
+
+       <article class="card__article">
+          <img src="static/img/transportation.jpg" alt="image" class="card__img" style="height: 250px;width: 300px;">
+          <div class="card__data">
+             <a href="/transportation" class="card__button"><h2 class="card__title">Transportation</h2></a>
+          </div>
+       </article>
+
+       <article class="card__article">
+         <img src="static/img/infrastructure.jpg" alt="image" class="card__img" style="height: 250px;width: 300px;">
+
+         <div class="card__data">
+            <a href="/infrastructure" class="card__button"><h2 class="card__title">Infrastructure</h2></a>
+         </div>
+      </article>
+
+       <article class="card__article">
+          <img src="static/img/circle_level.jpg" alt="image" class="card__img" style="height: 250px;width: 300px;">
+          <div class="card__data">
+             <a href="/circle" class="card__button"><h2 class="card__title">Circle Level</h2></a>
+          </div>
+       </article>
+    </div>
+ </div>
+</section>
+
+{% endblock%}
+
+

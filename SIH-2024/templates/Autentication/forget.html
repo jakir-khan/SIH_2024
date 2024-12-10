@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+    <div class="form-box" id="subMenu" style="background-color:rgba(255, 255, 255, 0.5);">
+        <div class="form-value">
+          <form method="POST" action="/get_mail_id">
+            <h2 >Email Verification</h2>
+            <div class="inputbox">
+              <i class="fa fa-mail"></i>
+              <input type="email" name="email" required>
+              <label for="">Enter email</label>
+            </div>
+            
+            <button id="butt" style="color: aliceblue;">Submit</button>
+            {% if internet %}
+              <div style="height: 17px;align-items: center;justify-content: center;display: flex;padding-bottom:-2px;">
+                Please Check your internet Connection
+              </div>
+            {% endif %}  
+            
+          </form>
+        </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+}
+body{ 
+  background-color: rgba(253, 252, 250, 255);
+  background-image: url('newloogo.png');
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* -----------------POPup (login) function--👇------ */
+.form-box {
+  margin-top: 10%;
+  margin-left: 35%;
+  position: absolute;
+  border: 2px solid rgba(72, 27, 222, 0.5);
+  background-color: rgba(232, 240, 254, 255);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  /* border: none;
+  border-color: #6528e0; */
+}
+
+/* Remove autofill styling */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(253, 252, 250, 255) inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+/* Ensure consistent focus styling */
+input:focus {
+  outline: none;
+  border: 1px solid rgba(253, 252, 250, 255); /* Adjust to your preferred border color */
+  background-color: rgba(253, 252, 250, 255) /* Ensure background remains clean */
+}
+
+
+.form-box.open-menu {
+  z-index: 1001;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  max-height: 450px;
+}
+
+#boxClose {
+  color: #080808;
+  position: absolute;
+  font-size: 50px;
+  margin-left: 73%;
+  margin-top: -15%;
+}
+
+#clarity.blur {
+  filter: blur(15px);
+}
+
+ .scrollLock {
+  overflow: hidden;
+} 
+/* -----POPup (login) function-----👆------ */
+
+/* --------login page-----------👇------ */
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+.modal-sheet .modal-dialog {
+  width: 380px;
+  transition: bottom 0.75s ease-in-out;
+}
+
+.modal-sheet .modal-footer {
+  padding-bottom: 2rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  width: 100;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2em;
+  color: #090909;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #0e0e0e;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 20%; 
+  left: 5px;
+  transform: translateY(-50%);
+  color: #050505;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label,input:valid ~ label {
+  font-size: smaller;
+  top: 6px;
+  color: rgb(14, 15, 14);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #0e0e0e;
+}
+
+.inputbox i {
+  position: absolute;
+  right: 25px;
+  color: #0d0d0d;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+.forget {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: #070707;
+  display: flex;
+  justify-content: center;
+}
+
+.forget label a {
+  margin-right: 3px;
+}
+
+.forget label a {
+  /* color: #fff; */
+  color: rgb(15, 16, 15);
+  text-decoration: none;
+}
+
+.forget label a:hover {
+  text-decoration: underline;
+}
+
+#butt {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: rgba(32, 59, 232, 0.567);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.register {
+  font-size: 0.9em;
+  color: #0d0d0d;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  /* color: #fff; */
+  color: rgb(16, 16, 16);
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+/* -----POPup (login)-----👆------ */
+
+
+#role_type{
+  border: none;
+  outline: none;
+  font-size: larger;
+  margin-bottom: 10px;
+
+}
+
+#role_type:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(253, 252, 250, 255) inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+/* Ensure consistent focus styling */
+#role_type:focus {
+  outline: none;
+  border: 1px solid rgba(253, 252, 250, 255); /* Adjust to your preferred border color */
+  background-color: rgba(253, 252, 250, 255) /* Ensure background remains clean */
+}
+

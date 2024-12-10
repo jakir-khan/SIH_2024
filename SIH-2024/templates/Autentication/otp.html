@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+    <div class="form-box" id="subMenu" style="background-color:rgba(255, 255, 255, 0.5);">
+        <div class="form-value">
+          <form method="POST" action="/checking_otp">
+            <h2 >OTP Verification</h2>
+            <div class="inputbox">
+              <i class="fa fa-mail"></i>
+              <input type="text" name="text" required>
+              <label for="">Enter Code</label>
+            </div>
+        
+            <div class="forget">
+                <label for="">
+                   <a href="/">Cancel</a>
+              </div>
+              <button id="butt" style="color: aliceblue;">Verify</button>
+              {% if invalid %}
+              <div style="height: 17px;align-items: center;justify-content: center;display: flex;padding-bottom:-2px;">
+                Invalid Code Plz verify again
+              </div>
+              {% endif %}            
+          </form>
+        </div>
+   </div>
+</body>
+</html>

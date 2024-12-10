@@ -1,0 +1,47 @@
+{% extends "Regional_level/main.html" %} 
+{% block title %}Infracture{% endblock title %} 
+{% block content %}
+
+<section class="home">
+  <div class="container1">
+    <h1>Data Infrastructure Demography Dashboard</h1>
+    <div class="form-group">
+        <label for="demographic">Infracture Level:</label>
+        <select id="demographic">
+            <option value="">Select</option>
+            <option value="Basic Amenities">Basic Amenities</option>
+            <option value="Sanitation">Sanitation</option>
+            <option value="Water Supply">Water Supply</option>
+            <option value="Drinking Water Source Locations">Drinking Water Source Locations</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="column">Select Column:</label>
+        <select id="column" disabled></select>
+    </div>
+    <div class="form-group">
+        <label for="graph">Graph Type:</label>
+        <select id="graph">
+            <option value="bar" selected>Bar</option>
+            <option value="line">Line</option>
+            <option value="pie">Pie</option>
+        </select>
+    </div>
+    <button id="generate-btn">Generate</button>
+    <div id="output">
+        
+        <div id="summary"></div>
+        
+        <canvas id="chart"></canvas>
+        
+        <table id="table"></table>
+    </div>
+</div>
+
+</section>
+<link rel="stylesheet" href="static/sectors.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="static/infrastructure.js"></script>
+
+{% endblock%}
